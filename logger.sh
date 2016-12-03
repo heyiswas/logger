@@ -26,5 +26,6 @@ elif [ -n "${LOGFILE}" ] && [ -n "${LOGMSG}" ];then
 	echo -e "${DATE}\t${LOGMSG}" >> ${LOGFILE}
 fi
 }
+
 # init
 _log "$1" "$2"
