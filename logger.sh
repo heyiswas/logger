@@ -2,7 +2,7 @@
 
 # Version	v0.1
 # Autor		Andrej Neufeldt
-# Contact	an@heyiswas.de
+# Contact	https://github.com/heyiswas
 
 # Usage
 # logger.sh "/path/to/log/something.log" "Message"
@@ -15,7 +15,6 @@ function _log() {
 LOGFILE="$1" # file name with extension, from stdin
 LOGMSG="$2" # log message from stdin
 DATE="$(date +'[%Y%m%d-%T %z]')" # add ".%N" for nanoseconds
-
 
 if [ -z "${LOGFILE}" ] && [ -z "${LOGMSG}" ];then
 	exit 1 # no log file & no error message? never seen, never happened
